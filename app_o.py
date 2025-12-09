@@ -6,7 +6,7 @@ from PIL import Image
 import numpy as np
 
 # Import our backend classes
-from utils import OnlineObjectDetector, SceneGraphBuilder, OnlineCaptioner
+from utils_o import OnlineObjectDetector, SceneGraphBuilder, OnlineCaptioner
 
 # --- PAGE CONFIG ---
 st.set_page_config(layout="wide", page_title="AI Scene Understanding")
@@ -106,4 +106,5 @@ def main():
                     st.write(f"- {objects[u]['label']} -> {data['relation']} -> {objects[v]['label']}")
 
 if __name__ == "__main__":
+
     main()
