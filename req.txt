@@ -1,0 +1,26 @@
+# --- Core Deep Learning (CUDA 12.x compatible) ---
+# Ensure these match the CUDA driver on your L40S machine
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0
+
+# --- Object Detection (YOLOv8) ---
+ultralytics>=8.1.0
+opencv-python-headless>=4.9.0.80  # 'Headless' avoids GUI dependencies on server envs
+
+# --- Captioning & Transformers (Hugging Face) ---
+transformers>=4.36.0
+tokenizers>=0.15.0
+accelerate>=0.25.0  # Crucial for loading large models onto L40S efficiently
+safetensors>=0.4.1  # Standard format for model weights
+
+# --- Scene Graph & Logic ---
+networkx>=3.2.1     # For building and managing the graph structure
+numpy==1.26.4
+scipy>=1.11.0       # Often needed for advanced distance calculations
+
+# --- Image Processing & Visualization ---
+pillow>=10.2.0      # Core image library
+matplotlib>=3.8.0   # For rendering the scene graph visualization
+
+protobuf==3.20.3

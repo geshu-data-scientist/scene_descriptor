@@ -1,0 +1,5 @@
+
+4. utils.py (The Logic - Online Mode)
+I have updated this to remove local_files_only=True. It now fetches models directly from Salesforce (Hugging Face) and Ultralytics.
+
+Note on Performance: I switched the default YOLO model to yolov8m.pt (Medium) and BLIP to base. The "Extra Large" models you used locally might crash the free tier of Streamlit Cloud due to memory limits (RAM). If you run this on your own GPU server, you can switch them back to large/x.
